@@ -36,7 +36,7 @@ def reset_variable(state):
 def main():
     day = get_state(my_var=1)
     # Create a title for the chat interface
-    st.title("Pat Testing Site")
+    st.title("New Matej Flow Testing Site")
     st.write("To test, first select some fields then click the button below.")
   
     #variables for system prompt
