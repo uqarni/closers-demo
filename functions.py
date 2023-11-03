@@ -24,7 +24,8 @@ def ideator(messages):
 
   result = openai.ChatCompletion.create(
     model="gpt-4",
-    messages= messages
+    messages= messages,
+    temperature = 0
   )
   response = result["choices"][0]["message"]["content"]
   
