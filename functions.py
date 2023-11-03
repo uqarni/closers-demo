@@ -17,7 +17,7 @@ def random_date():
 
 
 #generate openai response; returns messages with openai response
-def ideator(messages):
+def ideator(messages, temperature):
 
   key = os.environ.get("OPENAI_API_KEY")
   openai.api_key = key
