@@ -102,7 +102,7 @@ def main():
                 messages.append(json_obj)
 
         #generate OpenAI response
-        messages, count = ideator(messages)
+        messages, count = ideator(messages, temperature)
 
         #append to database
         with open('database.jsonl', 'a') as f:
