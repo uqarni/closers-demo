@@ -45,7 +45,7 @@ def main():
     booked_status = 'not booked'
     reschedule_link = 'N/A'
     lead_first_name = st.text_input('Lead First Name', value = 'John')
-    temperature = st.select_slider('Temperature', options=[round(i * 0.1, 1) for i in range(11)])
+    temperature = st.select_slider('Temperature', options=[round(i * 0.1, 1) for i in range(11)], value = 0.5)
     system_prompt = bot_info['system_prompt']
     system_prompt = system_prompt.format(lead_first_name = lead_first_name, agent_name = agent_name, booking_link = booking_link, booked_status = booked_status, reschedule_link = reschedule_link)
 
